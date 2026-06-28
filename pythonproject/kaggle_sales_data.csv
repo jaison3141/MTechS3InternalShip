@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>sales dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="This dataset represents synthetic sales data generated for practice purposes." />
+    <meta name="keywords" content="business,data analytics,data visualization,exploratory data analysis,categorical,random forest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==" type="text/javascript">
+    window["pageRequestStartTime"] = 1743979841978;
+    window["pageRequestEndTime"] = 1743979842067;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-ab17ea52188448007942.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/vinothkannaece/sales-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/vinothkannaece/sales-dataset" />
+    <meta property="og:title" content="sales dataset" />
+    <meta property="og:description" content="This dataset represents synthetic sales data generated for practice purposes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/6688404/10779441/03741646db10fb13967ce9f8d2891486/dataset-card.png?t=2025-02-18-05-19-04" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="7+4v2Ii7qXlG5B9FnLLoBw==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"sales dataset","description":"**Sales Data Description**\nThis dataset represents synthetic sales data generated for practice purposes only. It is not real-time or based on actual business operations, and should be used solely for educational or testing purposes. The dataset contains information that simulates sales transactions across different products, regions, and customers. Each row represents an individual sale event with various details associated with it.\n\n\n\n\nColumns in the Dataset\n\n1. Product_ID: Unique identifier for each product sold. Randomly generated for practice purposes.\n2. Sale_Date: The date when the sale occurred. Randomly selected from the year 2023.\n3. Sales_Rep: The sales representative responsible for the transaction. The dataset includes five random sales representatives (Alice, Bob, Charlie, David, Eve).\n4. Region: The region where the sale took place. The possible regions are North, South, East, and West.\n5. Sales_Amount: The total sales amount for the transaction, including discounts if any. Values range from 100 to 10,000 (in currency units).\n6. Quantity_Sold: The number of units sold in that transaction, randomly generated between 1 and 50.\n7. Product_Category: The category of the product sold. Categories include Electronics, Furniture, Clothing, and Food.\n8. Unit_Cost: The cost per unit of the product sold, randomly generated between 50 and 5000 currency units.\n9. Unit_Price: The selling price per unit of the product, calculated to be higher than the unit cost.\n10. Customer_Type: Indicates whether the customer is a **New** or **Returning** customer.\n11. Discount: The discount applied to the sale, randomly chosen between 0% and 30%.\n12. Payment_Method: The method of payment used by the customer (e.g., Credit Card, Cash, Bank Transfer).\n13. Sales_Channel: The channel through which the sale occurred. Either **Online** or **Retail**.\n14. Region_and_Sales_Rep: A combined column that pairs the region and sales representative for easier tracking.\n\nDisclaimer\n\nPlease note: This data was randomly generated and is intended solely for practice, learning, or testing. It does not reflect real-world sales, customers, or businesses, and should not be considered reliable for any real-time analysis or decision-making.\n","url":"https://www.kaggle.com/vinothkannaece/sales-dataset","version":1,"keywords":["subject, people and society, business","technique, data analytics","technique, data visualization","technique, exploratory data analysis","data type, categorical","technique, random forest"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["6688404"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"VINOTH KANNA S","url":"https://www.kaggle.com/vinothkannaece","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/18675361-kg.jpeg?t=2025-03-29-06-24-50"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/vinothkannaece/sales-dataset/download?datasetVersionNumber=1","contentSize":"27634 bytes"}],"commentCount":0,"dateModified":"2025-02-18T05:13:42.943Z","discussionUrl":"https://www.kaggle.com/vinothkannaece/sales-dataset/discussion","alternateName":"This dataset represents synthetic sales data generated for practice purposes.","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/6688404/10779441/03741646db10fb13967ce9f8d2891486/dataset-card.png?t=2025-02-18-05-19-04","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":8118},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":27919},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":96}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="7+4v2Ii7qXlG5B9FnLLoBw==" src="/static/assets/runtime.js?v=5a2e2517ae8588354357"></script>
+  <script nonce="7+4v2Ii7qXlG5B9FnLLoBw==" src="/static/assets/vendor.js?v=a62013a985d655b5d6e4"></script>
+  <script nonce="7+4v2Ii7qXlG5B9FnLLoBw==" src="/static/assets/app.js?v=3e3e6cc7e8a2874737a2"></script>
+    <script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="7&#x2B;4v2Ii7qXlG5B9FnLLoBw==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
